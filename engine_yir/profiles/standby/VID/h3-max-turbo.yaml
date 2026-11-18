@@ -1,0 +1,11 @@
+platform: yir
+media_type: video
+endpoint: "minimax/h3-max-turbo"
+description: "MiniMax H3 Max Turbo (Yir)"
+parameters:
+  resolution: "768P"
+  aspect_ratio: "16:9"
+  duration: 5
+prompt_prefix: ""
+prompt_suffix: ""
+duration_param_name: duration

@@ -1,0 +1,9 @@
+platform: yir
+media_type: image
+endpoint: "minimax/minimax-h3-image"
+description: "MiniMax H3 Image (Yir)"
+parameters:
+  resolution: "4K"
+  aspect_ratio: "1:1"
+prompt_prefix: ""
+prompt_suffix: ""

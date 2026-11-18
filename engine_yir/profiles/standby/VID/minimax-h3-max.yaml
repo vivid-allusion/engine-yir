@@ -1,0 +1,11 @@
+platform: yir
+media_type: video
+endpoint: "minimax/minimax-h3-max"
+description: "MiniMax H3 Max (Yir)"
+parameters:
+  resolution: "480p"
+  aspect_ratio: "16:9"
+  duration: 5
+prompt_prefix: ""
+prompt_suffix: ""
+duration_param_name: duration

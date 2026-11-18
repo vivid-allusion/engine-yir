@@ -1,0 +1,54 @@
+id = "minimax-h3-image"
+label = "MiniMax H3 Image (Yir)"
+category = "IMG"
+platform = "yir"
+endpoint = "minimax/minimax-h3-image"
+mode = "async"
+description = "MiniMax open-weight image model with 4K output and editing from up to 16 reference images"
+
+[general]
+kind = "image"
+prompt = "required"
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "4K"
+options = [
+  { value = "1K", label = "1K" },
+  { value = "2K", label = "2K" },
+  { value = "4K", label = "4K" },
+]
+
+[params.aspect_ratio]
+label = "Aspect ratio"
+type = "select"
+default = "1:1"
+options = [
+  { value = "1:1", label = "1:1" },
+  { value = "2:3", label = "2:3" },
+  { value = "3:2", label = "3:2" },
+  { value = "3:4", label = "3:4" },
+  { value = "4:3", label = "4:3" },
+  { value = "4:5", label = "4:5" },
+  { value = "5:4", label = "5:4" },
+  { value = "9:16", label = "9:16" },
+  { value = "16:9", label = "16:9" },
+  { value = "21:9", label = "21:9" },
+]
+
+[inputs.text]
+roles = []
+[inputs.text.values]
+resolution = ["1K", "2K", "4K"]
+aspect_ratio = ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"]
+size = ["1024x1024", "832x1248", "1248x832", "896x1184", "1184x896", "928x1152", "1152x928", "768x1376", "1376x768", "1568x672", "2048x2048", "1664x2496", "2496x1664", "1760x2368", "2368x1760", "1824x2304", "2304x1824", "1536x2720", "2720x1536", "3136x1344", "4096x4096", "3328x4992", "4992x3328", "3520x4704", "4704x3520", "3648x4576", "4576x3648", "3072x5440", "5440x3072", "6240x2656"]
+n = [1]
+
+[inputs.image]
+roles = ["reference_image"]
+[inputs.image.values]
+resolution = ["1K", "2K", "4K"]
+aspect_ratio = ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"]
+size = ["1024x1024", "832x1248", "1248x832", "896x1184", "1184x896", "928x1152", "1152x928", "768x1376", "1376x768", "1568x672", "2048x2048", "1664x2496", "2496x1664", "1760x2368", "2368x1760", "1824x2304", "2304x1824", "1536x2720", "2720x1536", "3136x1344", "4096x4096", "3328x4992", "4992x3328", "3520x4704", "4704x3520", "3648x4576", "4576x3648", "3072x5440", "5440x3072", "6240x2656"]
+n = [1]

@@ -1,0 +1,11 @@
+platform: yir
+media_type: video
+endpoint: "minimax/minimax-h3-lite"
+description: "MiniMax H3 Lite (Yir)"
+parameters:
+  resolution: "768P"
+  aspect_ratio: "16:9"
+  duration: 5
+prompt_prefix: ""
+prompt_suffix: ""
+duration_param_name: duration
